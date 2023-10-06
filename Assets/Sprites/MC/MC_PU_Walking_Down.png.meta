@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9ebdef2c0c61764dacfb071a9f6c747
+guid: 50e6d8b804d2f0542a8cf7a7dec20de6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_PU_Walking_0
+      name: MC_PU_Walking_Down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b75ebacb640b2e34c95bab05b68e9155
-      internalID: -1672673650
+      spriteID: 2c82adf4509b23044bafc68f7c2581cd
+      internalID: 333211004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_PU_Walking_1
+      name: MC_PU_Walking_Down_1
       rect:
         serializedVersion: 2
         x: 32
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca28b66017cfc7c43a3342297965b791
-      internalID: -1721952683
+      spriteID: 544173a374123b94aa7788a301d6020f
+      internalID: 859743684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_PU_Walking_2
+      name: MC_PU_Walking_Down_2
       rect:
         serializedVersion: 2
         x: 64
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c616478f3296348aca92fe9cc9c026
-      internalID: -959758472
+      spriteID: 6c94d1d6cabaaf648a3a898d54ca7f4e
+      internalID: 1279755055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_PU_Walking_3
+      name: MC_PU_Walking_Down_3
       rect:
         serializedVersion: 2
         x: 96
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef2d96b9a6ec1f642bc1674cdceebafa
-      internalID: 1995935003
+      spriteID: ccaa82bd66e61b54d84e4f358dde6dd2
+      internalID: -669392853
       vertices: []
       indices: 
       edges: []
@@ -193,7 +193,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fe20506dd7511574798f0a5cb506c28b
+    spriteID: 7db878ea96d2b5943b0317f832a78e50
     internalID: 0
     vertices: []
     indices: 
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MC_PU_Walking_0: -1672673650
-      MC_PU_Walking_1: -1721952683
-      MC_PU_Walking_2: -959758472
-      MC_PU_Walking_3: 1995935003
+      MC_PU_Walking_Down_0: 333211004
+      MC_PU_Walking_Down_1: 859743684
+      MC_PU_Walking_Down_2: 1279755055
+      MC_PU_Walking_Down_3: -669392853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

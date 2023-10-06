@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,8 +121,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084af9d014606f24f84f9e5f9db3d48e
-      internalID: 249726979
+      spriteID: f50d3891bcbb30c478d3bb53c753fa38
+      internalID: 277369551
       vertices: []
       indices: 
       edges: []
@@ -142,8 +142,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ebec9e0311862d449631e257f844393
-      internalID: -861381349
+      spriteID: 49abec9d54b50b747a9dacb52ead8326
+      internalID: 1889217024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Scared_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3418108462b3544e97f2152838d2d08
+      internalID: -1355104779
       vertices: []
       indices: 
       edges: []
@@ -151,7 +172,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 01e3009c4e22b144787406f5408c0013
+    spriteID: 823c7e7ab958df94e9201abb20e648c3
     internalID: 0
     vertices: []
     indices: 
@@ -159,8 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost_Scared_0: 249726979
-      Ghost_Scared_1: -861381349
+      Ghost_Scared_0: 277369551
+      Ghost_Scared_1: 1889217024
+      Ghost_Scared_2: -1355104779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

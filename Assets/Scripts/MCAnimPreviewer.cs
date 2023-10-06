@@ -6,9 +6,9 @@ public class MCAnimPreviewer : MonoBehaviour
 {
     Animator animator;
     [SerializeField]
-    public int dir = 0;
+    public int dir;
     [SerializeField]
-    public bool dead = false;
+    public bool dead;
 
     // Use this for initialization
     void Start()
@@ -19,7 +19,7 @@ public class MCAnimPreviewer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("Direction", dir);
-        animator.SetFloat("Dead", dead);
+        animator.SetInteger("Direction", dir);
+        animator.SetBool("Dead", dead);
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ccba900cbb9efea46bd72bd28eb9a42e
+guid: a921b5cb138afdd4bb57ee656a4f2ffa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PU_Orb_0
+      name: Ghost_Normal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b12d4690723f3148b48c75e4a4b5233
-      internalID: -892239485
+      spriteID: 91dde6350a486b54c83bd699d573784a
+      internalID: 307337876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PU_Orb_1
+      name: Ghost_Normal_1
       rect:
         serializedVersion: 2
         x: 32
@@ -142,8 +142,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a0b1cd6fa341bb41bd9d07a56aca075
-      internalID: 134956975
+      spriteID: 61594f8d46527a34fa4dc1102156c35b
+      internalID: 1661883243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ce6f5c3aab17643be89d9ab19a779a
+      internalID: -1952303652
       vertices: []
       indices: 
       edges: []
@@ -151,7 +172,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d28b6a090670e684e8da4fb95583c6a3
     internalID: 0
     vertices: []
     indices: 
@@ -159,8 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PU_Orb_0: -892239485
-      PU_Orb_1: 134956975
+      Ghost_Normal_0: 307337876
+      Ghost_Normal_1: 1661883243
+      Ghost_Normal_2: -1952303652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

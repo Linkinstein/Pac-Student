@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 372927eb3bd430e468abc22e41f66347
+guid: 5b683e36f97a11c4195837729c15c486
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,175 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Death_0
+      name: Wall_Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e069a5c8b446cd488714bdabf684707
+      internalID: -1021796507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc450640433dff5479572cf1f77471e7
+      internalID: 314402220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc57df5870adf04588e3307c7608a41
+      internalID: 1791081082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d011d17ddd54243873389b6be35ebb
+      internalID: -663338435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62ab8bbedacd7642992b4760efc7bb3
+      internalID: -1669031406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3b7ff74dd45dc4b912eb33989510d6
+      internalID: 1017599796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1675c25f5cd04d4085a45b296e05394
+      internalID: 202935679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b736ae01f17254d8cf01653dbf051b
+      internalID: 1895196628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Tiles_10
       rect:
         serializedVersion: 2
         x: 0
@@ -115,41 +283,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8bcf27d45f60fb448a0d59d7efa05e3
-      internalID: 381545528
+      spriteID: 94379cb45a3f7cf45a01726c38e435f6
+      internalID: 1422540658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Death_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c10316abea274f34a87539f0dca9e6ab
-      internalID: 1128841437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Death_2
+      name: Wall_Tiles_12
       rect:
         serializedVersion: 2
         x: 64
@@ -157,20 +304,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95185dc4da6b3334e9d22a3ba9cb2c8e
-      internalID: -1068682620
+      spriteID: 5c2a048f19e7fa446b280848121008dd
+      internalID: -1611772913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Death_3
+      name: Wall_Tiles_13
       rect:
         serializedVersion: 2
         x: 96
@@ -178,41 +325,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ad0597e777a8a542bcd49b648d88138
-      internalID: 1042541022
+      spriteID: a6ac76b96026fed48acfc2f2326afe49
+      internalID: 846797999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Death_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfaff762ccdfbf54087e6f86dc0665db
-      internalID: 1176671309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Death_5
+      name: Wall_Tiles_15
       rect:
         serializedVersion: 2
         x: 160
@@ -220,98 +346,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6e5900e14c995e438212f4a5b71781d
-      internalID: 1957624080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Death_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b635596e3debd7499fc9ac4ec2e1371
-      internalID: -2014449659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Death_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fed2ba2c9d486e48bba7058da12378c
-      internalID: -1297176230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Death_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d670f4f4f98bbbf41989c020384e89ec
-      internalID: 1591310272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Death_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cf348c39d3830747bb7af8b029fc431
-      internalID: -105021114
+      spriteID: 2e315b229b40fc147abfb2e558034710
+      internalID: 417081669
       vertices: []
       indices: 
       edges: []
@@ -319,7 +361,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9dd6c11a10874604dac2c5b1ef46def7
+    spriteID: 548e05974d4997a4c8e74d826cca3bb8
     internalID: 0
     vertices: []
     indices: 
@@ -327,16 +369,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MC_Death_0: 381545528
-      MC_Death_1: 1128841437
-      MC_Death_2: -1068682620
-      MC_Death_3: 1042541022
-      MC_Death_4: 1176671309
-      MC_Death_5: 1957624080
-      MC_Death_6: -2014449659
-      MC_Death_7: -1297176230
-      MC_Death_8: 1591310272
-      MC_Death_9: -105021114
+      Wall_Tiles_0: -1021796507
+      Wall_Tiles_1: 314402220
+      Wall_Tiles_10: 1422540658
+      Wall_Tiles_11: -1725481879
+      Wall_Tiles_12: -1611772913
+      Wall_Tiles_13: 846797999
+      Wall_Tiles_14: 1373842927
+      Wall_Tiles_15: 417081669
+      Wall_Tiles_2: 1791081082
+      Wall_Tiles_3: -663338435
+      Wall_Tiles_4: -1669031406
+      Wall_Tiles_5: 1017599796
+      Wall_Tiles_6: 202935679
+      Wall_Tiles_7: -1921382898
+      Wall_Tiles_8: 1895196628
+      Wall_Tiles_9: -980032999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

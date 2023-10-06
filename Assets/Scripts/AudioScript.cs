@@ -6,9 +6,11 @@ public class AudioScript : MonoBehaviour
 {
     public AudioClip startBGM;
     public AudioClip loopBGM;
+    public AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(playEngineSound());
     }
 
@@ -19,11 +21,12 @@ public class AudioScript : MonoBehaviour
 
     IEnumerator playEngineSound()
     {
-        GetComponent<AudioSource>().clip = startBGM;
-        GetComponent<AudioSource>().Play();
+        audioSource.clip = startBGM;
+        audioSource.Play();
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
-        GetComponent<AudioSource>().clip = loopBGM;
-        GetComponent<AudioSource>().loop = true;
-        GetComponent<AudioSource>().Play();
+        audioSource.clip = loopBGM;
+        audioSource.loop = true;
+        audioSource.volume = 0.5f;
+        audioSource.Play();
     }
 }

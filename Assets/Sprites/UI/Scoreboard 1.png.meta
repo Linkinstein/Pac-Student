@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7158f422a921a324796238585064f70c
+guid: 01968215d4b5ac640a6c6af23c341677
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button_Outer_0
+      name: Scoreboard 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ada0120d476f67449ca3e14088a94a6
-      internalID: -2107841820
+      spriteID: b00e6751b0af4584a9db49c8d403341c
+      internalID: -92265061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_1
+      name: Scoreboard 1_1
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55beb23ad23a2b34f99189bc3f8ac031
-      internalID: -1594172860
+      spriteID: 92eaea37b0d84444e8d85a0a4d98dd21
+      internalID: -962921668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_2
+      name: Scoreboard 1_2
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce9242c633a8fd4d9c796c881d04c47
-      internalID: -1577090746
+      spriteID: 897044d9a7540dd44b1de9530718d03a
+      internalID: 38454758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_3
+      name: Scoreboard 1_3
       rect:
         serializedVersion: 2
         x: 576
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a326be8de4457f746af8ac7d91352ed4
-      internalID: -695325381
+      spriteID: 61be30101963f164d8bdca2ebf71ea78
+      internalID: -1699608563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_4
+      name: Scoreboard 1_4
       rect:
         serializedVersion: 2
         x: 768
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff3426d569d8ca54a826bfade019c400
-      internalID: 548453409
+      spriteID: cdce3be6ddea3674caf5099f0b1539ff
+      internalID: 883406061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_5
+      name: Scoreboard 1_5
       rect:
         serializedVersion: 2
         x: 960
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f928dd2eeeed0b4dae8cd062377f0bc
-      internalID: -485520032
+      spriteID: 0699cc7e79adb5141a4ea4fd61259427
+      internalID: 642388532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_6
+      name: Scoreboard 1_6
       rect:
         serializedVersion: 2
         x: 1152
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d01ec2b4e76644cbf8ab638b155e84
-      internalID: 1711391970
+      spriteID: ad4be599bb9d7da498b8e7a5fe3ef835
+      internalID: 965838851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_7
+      name: Scoreboard 1_7
       rect:
         serializedVersion: 2
         x: 1344
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c29f1d600df88674dbd0851238303132
-      internalID: -1012629170
+      spriteID: 87d4de2d18d4d69418b738bc1e912232
+      internalID: -1594368491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_8
+      name: Scoreboard 1_8
       rect:
         serializedVersion: 2
         x: 1536
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b66ad59745df872439885f1d9ff2542e
-      internalID: 362935685
+      spriteID: 9dc27a9d3f585064e8b043878cf7526b
+      internalID: 391295608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_Outer_9
+      name: Scoreboard 1_9
       rect:
         serializedVersion: 2
         x: 1728
         y: 0
         width: 192
-        height: 96
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fe3b9df527c7554f8635e18e546556c
-      internalID: -1671293214
+      spriteID: 628d9c2950d24914fbb1a60b48b855e7
+      internalID: -1134633708
       vertices: []
       indices: 
       edges: []
@@ -319,7 +319,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 94f538adb7426e4479af70fef1d5585a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -327,16 +327,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Button_Outer_0: -2107841820
-      Button_Outer_1: -1594172860
-      Button_Outer_2: -1577090746
-      Button_Outer_3: -695325381
-      Button_Outer_4: 548453409
-      Button_Outer_5: -485520032
-      Button_Outer_6: 1711391970
-      Button_Outer_7: -1012629170
-      Button_Outer_8: 362935685
-      Button_Outer_9: -1671293214
+      Scoreboard 1_0: -92265061
+      Scoreboard 1_1: -962921668
+      Scoreboard 1_2: 38454758
+      Scoreboard 1_3: -1699608563
+      Scoreboard 1_4: 883406061
+      Scoreboard 1_5: 642388532
+      Scoreboard 1_6: 965838851
+      Scoreboard 1_7: -1594368491
+      Scoreboard 1_8: 391295608
+      Scoreboard 1_9: -1134633708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

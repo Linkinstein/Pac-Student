@@ -18,10 +18,6 @@ public class PacStudentController : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) lastInput = Vector3.left;
         if (Input.GetKey(KeyCode.S)) lastInput = Vector3.down;
         if (Input.GetKey(KeyCode.D)) lastInput = Vector3.right;
-        if (!isLerping)
-        {
-
-        }
     }
 
 

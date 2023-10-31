@@ -22,6 +22,9 @@ public class LevelButton : MonoBehaviour
             case "Bttn_lv2":
                 //SceneManager.LoadScene("Level2");
                 break;
+            case "Bttn_Exit":
+                SceneManager.LoadScene("StartScene");
+                break;
         }
 
     }

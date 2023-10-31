@@ -24,6 +24,5 @@ public class LevelButton : MonoBehaviour
                 break;
         }
 
-        SceneManager.UnloadSceneAsync("StartScene");
     }
 }

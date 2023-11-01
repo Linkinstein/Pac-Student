@@ -86,7 +86,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     IEnumerator MoveCherry(GameObject cherry, Vector3 targetPosition)
     {
-        // Start moving the cherry from its current position to the target position
         moving = true;
         float journeyLength = Vector3.Distance(cherry.transform.position, targetPosition);
         float startTime = Time.time;

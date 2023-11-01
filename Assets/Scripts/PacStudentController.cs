@@ -158,4 +158,23 @@ public class PacStudentController : MonoBehaviour
         }
         audio.Play();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("HIT");
+        if (collision.gameObject.CompareTag("Orbs") && orbTilemap != null)
+        {
+            Vector3 hitPosition = Vector3.zero;
+            hitPosition = collision.GetContact(0).point;
+
+            Vector3Int cellPosition = orbTilemap.WorldToCell(hitPosition);
+
+            TileBase tile = orbTilemap.GetTile(cellPosition);
+
+            if (tile != null)
+            {
+                    orbTilemap.SetTile(cellPosition, null); 
+            }
+        }
+    }
 }

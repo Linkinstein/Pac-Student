@@ -117,7 +117,6 @@ public class PacStudentController : MonoBehaviour
     {
         Vector3Int gridPosition = orbTilemap.WorldToCell(position);
         TileBase tile = orbTilemap.GetTile(gridPosition);
-        Debug.Log(tile);
         return tile != null;
     }
 

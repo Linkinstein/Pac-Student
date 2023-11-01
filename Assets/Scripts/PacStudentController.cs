@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class PacStudentController : MonoBehaviour
 {
-    public Animator anim;
+    private Animator anim;
 
-    public AudioSource audio;
+    public Text scoreboard;
+    private int score = 0;
+
+    private AudioSource audio;
     public AudioClip collide;
     public AudioClip eat;
     public AudioClip step;
@@ -173,7 +177,9 @@ public class PacStudentController : MonoBehaviour
 
             if (tile != null)
             {
-                    orbTilemap.SetTile(cellPosition, null); 
+                score += 10;
+                scoreboard.text = "High Score:\n" + score.ToString();
+                orbTilemap.SetTile(cellPosition, null); 
             }
         }
     }

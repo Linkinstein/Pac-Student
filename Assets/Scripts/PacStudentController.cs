@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PacStudentController : MonoBehaviour
 {
-    public float moveSpeed = 5.0f;
-    public GameObject wallTilemap;
-    public Tilemap walls;
+    public float moveSpeed = 10.0f;
+    public Tilemap wallTilemap;
+    public Tilemap OrbTilemap;
+    public ParticleSystem walkEffect;
 
     private Vector3 currentInput;
     private Vector3 lastInput;
@@ -46,6 +48,7 @@ public class PacStudentController : MonoBehaviour
     
     IEnumerator LerpToPosition(Vector3 target)
     {
+        walkEffect.Play();
         moving = true;
         float journeyLength = Vector3.Distance(transform.position, target);
         float journeyTime = journeyLength / moveSpeed;
@@ -60,9 +63,18 @@ public class PacStudentController : MonoBehaviour
 
         transform.position = target;
         moving = false;
+        walkEffect.Stop();
     }
 
     bool IsWalkable(Vector3 position)
     {
+        // Convert world position to grid position
+        Vector3Int gridPosition = wallTilemap.WorldToCell(position);
+
+        // Check if there is a tile (wall) at the grid position
+        TileBase tile = wallTilemap.GetTile(gridPosition);
+
+        // Return false if there's a wall (tile), true if it's walkable (no tile)
+        return tile == null;
     }
 }

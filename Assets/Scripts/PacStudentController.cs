@@ -5,23 +5,22 @@ using UnityEngine.Tilemaps;
 
 public class PacStudentController : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
 
-    AudioSource audio;
+    public AudioSource audio;
     public AudioClip collide;
     public AudioClip eat;
     public AudioClip step;
     public AudioClip death;
 
-    public float moveSpeed = 10.0f;
     public Tilemap wallTilemap;
     public Tilemap orbTilemap;
     public ParticleSystem walkEffect;
 
+    public float moveSpeed = 10.0f;
     private Vector3 currentInput;
     private Vector3 lastInput;
     private bool moving = false;
-    private bool start = false;
 
     void Start()
     {
@@ -35,26 +34,8 @@ public class PacStudentController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W)) lastInput = Vector3.up;
         if (Input.GetKey(KeyCode.A)) lastInput = Vector3.left;
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            lastInput = Vector3.down;
-            if (!start)
-            { 
-                start = true;
-                ChangeAudio(transform.position + lastInput);
-            }
-        }
-
-        if (Input.GetKey(KeyCode.D)) 
-        { 
-            lastInput = Vector3.right;
-            if (!start)
-            {
-                start = true;
-                ChangeAudio(transform.position + lastInput);
-            }
-        }
+        if (Input.GetKey(KeyCode.S)) lastInput = Vector3.down;
+        if (Input.GetKey(KeyCode.D)) lastInput = Vector3.right;
 
         if (!moving)
         {
@@ -77,6 +58,7 @@ public class PacStudentController : MonoBehaviour
     
     IEnumerator LerpToPosition(Vector3 target)
     {
+        isOrb(target);
         walkEffect.Play();
         moving = true;
         float journeyLength = Vector3.Distance(transform.position, target);
@@ -98,26 +80,36 @@ public class PacStudentController : MonoBehaviour
 
     bool IsWalkable(Vector3 position)
     {
-        isOrb(position);
         Vector3Int gridPosition = wallTilemap.WorldToCell(position);
         TileBase tile = wallTilemap.GetTile(gridPosition);
 
         if (tile != null)
         {
-            if (lastInput == currentInput)
+            if (lastInput == currentInput && currentInput != Vector3.zero)
             {
+                audio.enabled = false;
                 anim.SetInteger("Direction", 5);
-                ChangeAudio(position);
             }
             return false;
-        } else return true;
+        }
+        else return true;
     }
 
-    bool isOrb(Vector3 position)
+    void isOrb(Vector3 position)
     {
         Vector3Int gridPosition = orbTilemap.WorldToCell(position);
         TileBase tile = orbTilemap.GetTile(gridPosition);
-        return tile != null;
+        if (tile != null && currentInput != Vector3.zero)
+        {
+            if (lastInput == currentInput)
+            {
+                ChangeAudio(1);
+            }
+        }
+        else
+        {
+            if(currentInput != Vector3.zero && lastInput == currentInput) ChangeAudio(2);
+        }
     }
 
     void changeAnim()
@@ -140,24 +132,30 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
-    void ChangeAudio(Vector3 position)
+    void ChangeAudio(int x)
     {
-        if (!IsWalkable(position))
-        {
-            audio.loop = false;
-            audio.clip = collide;
+        audio.enabled = true;
+        switch(x)
+        { 
+            //case 0:
+            //    if (!collided)
+            //    {
+            //        audio.loop = false;
+            //        audio.clip = collide;
+            //        collided = true;
+            //    }
+            //    break;
+
+            case 1:
+                audio.loop = true;
+                audio.clip = eat;
+                break;
+
+            case 2:
+                audio.loop = true;
+                audio.clip = step;
+                break;
         }
-        else if (isOrb(position))
-        {
-            audio.loop = true;
-            audio.clip = eat;
-        }
-        else
-        {
-            audio.loop = true;
-            audio.clip = step;
-        }
-        
         audio.Play();
     }
 }

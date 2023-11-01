@@ -14358,7 +14358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2449921500442716581, guid: de59bd2e6ec392f4eb688572395eaece, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.12
+      value: 12.1
       objectReference: {fileID: 0}
     - target: {fileID: 2449921500442716581, guid: de59bd2e6ec392f4eb688572395eaece, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14416,21 +14416,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5918789675599934071, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.500545
+      value: -12.5
       objectReference: {fileID: 0}
     - target: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.500809
+      value: 13.5
       objectReference: {fileID: 0}
     - target: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.06505105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14468,7 +14472,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5918789675599934075, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}

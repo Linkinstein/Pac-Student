@@ -14491,14 +14491,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5918789675599934074, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5918789675326640224}
+      addedObject: {fileID: 5918789675326640228}
   m_SourcePrefab: {fileID: 100100000, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
 --- !u!4 &5918789675326640223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5918789675599934072, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
   m_PrefabInstance: {fileID: 5918789675326640222}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5918789675326640224
+--- !u!114 &5918789675326640228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14511,6 +14511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  wallTilemap: {fileID: 536070557}
 --- !u!1001 &7613751246571040020
 PrefabInstance:
   m_ObjectHideFlags: 0

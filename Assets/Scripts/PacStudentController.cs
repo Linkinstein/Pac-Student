@@ -5,10 +5,19 @@ using UnityEngine;
 public class PacStudentController : MonoBehaviour
 {
     public float moveSpeed = 5.0f;
+    public GameObject wallTilemap;
+    public Tilemap walls;
 
-    private Vector3 currentInput = Vector3.zero;
-    private Vector3 lastInput = Vector3.zero;
-    private bool moving = false;
+    private Vector3 currentInput;
+    private Vector3 lastInput;
+    private bool moving;
+
+    void Start()
+    {
+        currentInput = Vector3.zero;
+        lastInput = Vector3.zero;
+        moving = false;
+    }
 
     void Update()
     {
@@ -20,11 +29,17 @@ public class PacStudentController : MonoBehaviour
         if (!moving)
         {
 
-            Vector3 targetPosition = transform.position + currentInput;
+            Vector3 newDir = transform.position + lastInput;
+            Vector3 oldDir = transform.position + currentInput;
 
-            if (IsWalkable(targetPosition))
+            if (IsWalkable(newDir))
             {
-                StartCoroutine(LerpToPosition(targetPosition));
+                currentInput = lastInput;
+                StartCoroutine(LerpToPosition(newDir));
+            }
+            else if (IsWalkable(oldDir))
+            {
+                StartCoroutine(LerpToPosition(oldDir));
             }
         }
     }
@@ -49,6 +64,5 @@ public class PacStudentController : MonoBehaviour
 
     bool IsWalkable(Vector3 position)
     {
-        return true;
     }
 }

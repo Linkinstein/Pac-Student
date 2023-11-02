@@ -9,7 +9,6 @@ public class PacStudentController : MonoBehaviour
     private Animator anim;
 
     public Text scoreboard;
-    private int score = 0;
 
     private AudioSource audio;
     public AudioClip collide;
@@ -25,6 +24,7 @@ public class PacStudentController : MonoBehaviour
     private Vector3 currentInput;
     private Vector3 lastInput;
     private bool moving = false;
+    private bool started = false;
 
     void Start()
     {
@@ -36,10 +36,13 @@ public class PacStudentController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W)) lastInput = Vector3.up;
-        if (Input.GetKey(KeyCode.A)) lastInput = Vector3.left;
-        if (Input.GetKey(KeyCode.S)) lastInput = Vector3.down;
-        if (Input.GetKey(KeyCode.D)) lastInput = Vector3.right;
+        if (started)
+        {
+            if (Input.GetKey(KeyCode.W)) lastInput = Vector3.up;
+            if (Input.GetKey(KeyCode.A)) lastInput = Vector3.left;
+            if (Input.GetKey(KeyCode.S)) lastInput = Vector3.down;
+            if (Input.GetKey(KeyCode.D)) lastInput = Vector3.right;
+        }
 
         if (!moving)
         {
@@ -151,15 +154,16 @@ public class PacStudentController : MonoBehaviour
                 audio.enabled = true;
                 audio.loop = true;
                 audio.clip = eat;
+                audio.Play();
                 break;
 
             case 2:
                 audio.enabled = true;
                 audio.loop = true;
                 audio.clip = step;
+                audio.Play();
                 break;
         }
-        audio.Play();
     }
 
     IEnumerator DisableAudioAfterClip(float clipLength)
@@ -183,8 +187,7 @@ public class PacStudentController : MonoBehaviour
 
             if (tile != null)
             {
-                score += 10;
-                scoreboard.text = "High Score:\n" + score.ToString();
+                scoreboard.GetComponent<HighScoreTracker>().score += 10;
                 orbTilemap.SetTile(cellPosition, null); 
             }
         }
@@ -192,11 +195,16 @@ public class PacStudentController : MonoBehaviour
         if (collision.gameObject.CompareTag("Cherry"))
         {
             Destroy(collision.gameObject);
-            score += 100;
-            scoreboard.text = "High Score:\n" + score.ToString();
+            scoreboard.GetComponent<HighScoreTracker>().score += 100;
         }
 
         if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            Destroy(collision.gameObject);
+        }
+
+
+        if (collision.gameObject.CompareTag("Ghost"))
         {
             Destroy(collision.gameObject);
         }
@@ -209,5 +217,4 @@ public class PacStudentController : MonoBehaviour
             transform.position = other.GetComponent<Telesupport>().exit.transform.position;
         }
     }
-
 }

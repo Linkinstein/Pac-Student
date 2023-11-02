@@ -657,8 +657,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1033012741}
+  scoreboard: {fileID: 1378800453}
   timer: {fileID: 747149061}
   text: {fileID: 12349908}
+  tiles: {fileID: 1747507245}
 --- !u!4 &179337196
 Transform:
   m_ObjectHideFlags: 0

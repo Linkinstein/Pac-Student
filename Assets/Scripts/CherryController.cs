@@ -90,14 +90,16 @@ public class NewBehaviourScript : MonoBehaviour
         float journeyLength = Vector3.Distance(cherry.transform.position, targetPosition);
         float startTime = Time.time;
 
-        while (moving)
+        while (moving && cherry != null)
         {
-            float journeyFraction = (Time.time - startTime) / (journeyLength * 50);
+            float journeyFraction = (Time.time - startTime) / (journeyLength*2);
             cherry.transform.position = Vector3.Lerp(cherry.transform.position, targetPosition, journeyFraction);
-
-            if (journeyFraction >= 1.0f)
+            Debug.Log(cherry.transform.position + " " + targetPosition + " " + (journeyFraction*20));
+            if ((journeyFraction*20) >= 1.0f)
             {
-                Destroy(cherry);
+                Debug.Log("DELETE");
+                if (cherry != null)
+                    Destroy(cherry);
                 moving = false;
             }
 

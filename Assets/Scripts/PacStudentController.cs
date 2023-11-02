@@ -25,6 +25,7 @@ public class PacStudentController : MonoBehaviour
     private Vector3 currentInput;
     private Vector3 lastInput;
     private bool moving = false;
+    public bool collided = false;
 
     void Start()
     {
@@ -91,7 +92,7 @@ public class PacStudentController : MonoBehaviour
         {
             if (lastInput == currentInput && currentInput != Vector3.zero)
             {
-                audio.enabled = false;
+                ChangeAudio(0);
                 anim.SetInteger("Direction", 5);
             }
             return false;
@@ -138,24 +139,24 @@ public class PacStudentController : MonoBehaviour
 
     void ChangeAudio(int x)
     {
-        audio.enabled = true;
+        
         switch(x)
         { 
-            //case 0:
-            //    if (!collided)
-            //    {
-            //        audio.loop = false;
-            //        audio.clip = collide;
-            //        collided = true;
-            //    }
-            //    break;
+            case 0:
+                    audio.loop = false;
+                    audio.clip = collide;
+                    StartCoroutine(DisableAudioAfterClip(audio.clip.length));
+                
+                break;
 
             case 1:
+                audio.enabled = true;
                 audio.loop = true;
                 audio.clip = eat;
                 break;
 
             case 2:
+                audio.enabled = true;
                 audio.loop = true;
                 audio.clip = step;
                 break;
@@ -163,9 +164,16 @@ public class PacStudentController : MonoBehaviour
         audio.Play();
     }
 
+    IEnumerator DisableAudioAfterClip(float clipLength)
+    {
+        audio.Play();
+        yield return new WaitForSeconds(clipLength);
+        audio.enabled = false;
+    }
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("HIT");
         if (collision.gameObject.CompareTag("Orbs") && orbTilemap != null)
         {
             Vector3 hitPosition = Vector3.zero;
@@ -181,6 +189,13 @@ public class PacStudentController : MonoBehaviour
                 scoreboard.text = "High Score:\n" + score.ToString();
                 orbTilemap.SetTile(cellPosition, null); 
             }
+        }
+
+        if (collision.gameObject.CompareTag("Cherry"))
+        {
+            Destroy(collision.gameObject);
+            score += 100;
+            scoreboard.text = "High Score:\n" + score.ToString();
         }
     }
 }

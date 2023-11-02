@@ -216,16 +216,22 @@ public class PacStudentController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Ghost"))
         {
-            started = false;
             StartCoroutine(dead());
         }
     }
 
     IEnumerator dead()
     {
+        started = false;
         anim.SetBool("Dead", true);
         ChangeAudio(3);
-        yield return new WaitForSeconds(5);
+
+        yield return new WaitForSeconds(2.5f);
+
+        transform.position = spawn;
+        anim.SetBool("Dead", false);
+        yield return new WaitForSeconds(0.5f);
+        started = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

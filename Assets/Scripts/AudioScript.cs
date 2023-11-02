@@ -23,7 +23,6 @@ public class AudioScript : MonoBehaviour
     {
         audioSource.clip = startBGM;
         audioSource.Play();
-        Debug.Log(GetComponent<AudioSource>().clip.length);
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
         audioSource.clip = loopBGM;
         audioSource.loop = true;

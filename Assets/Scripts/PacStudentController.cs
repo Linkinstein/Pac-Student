@@ -26,7 +26,7 @@ public class PacStudentController : MonoBehaviour
     private Vector3 spawn;
     private Vector3 lastInput;
     private bool moving = false;
-    public bool started = true; // DONT FORGET TO CHANGE BACK TO FALSE
+    public bool started = false;
 
     void Start()
     {

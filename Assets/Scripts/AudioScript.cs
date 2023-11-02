@@ -6,7 +6,9 @@ public class AudioScript : MonoBehaviour
 {
     public AudioClip startBGM;
     public AudioClip loopBGM;
-    public AudioSource audioSource;
+    public AudioClip scareBGM;
+    public AudioClip deadBGM;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -16,7 +18,24 @@ public class AudioScript : MonoBehaviour
 
     void Update()
     {
+        if (audioSource.clip == scareBGM && !scaring)
+        {
+            StartCoroutine(ScaredToLoop());
+        }
+    }
 
+    bool scaring = false;
+
+    IEnumerator ScaredToLoop()
+    {
+        scaring = true;
+        yield return new WaitForSeconds(10);
+
+        audioSource.Stop();
+        audioSource.clip = loopBGM;
+        audioSource.Play();
+
+        scaring = false;
     }
 
     IEnumerator playEngineSound()

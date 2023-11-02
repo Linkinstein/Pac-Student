@@ -509,6 +509,7 @@ MonoBehaviour:
   ghost4: {fileID: 1743399408}
   audio: {fileID: 679516332}
   clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
+  timer: {fileID: 743245209}
 --- !u!61 &137102888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -856,6 +857,7 @@ MonoBehaviour:
   ghost4: {fileID: 1743399408}
   audio: {fileID: 679516332}
   clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
+  timer: {fileID: 743245209}
 --- !u!61 &468785157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6248,7 +6250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startBGM: {fileID: 8300000, guid: 7a397abd62d93db44bbc5444232554a5, type: 3}
   loopBGM: {fileID: 8300000, guid: 8a4767ac759fa504fbd3c363d06443e7, type: 3}
-  audioSource: {fileID: 0}
+  scareBGM: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
+  deadBGM: {fileID: 8300000, guid: e6e8ead770d22094e98142b309ced982, type: 3}
 --- !u!224 &702232826 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4981241836896387481, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
@@ -6277,6 +6280,7 @@ GameObject:
   - component: {fileID: 743245213}
   - component: {fileID: 743245212}
   - component: {fileID: 743245211}
+  - component: {fileID: 743245214}
   m_Layer: 5
   m_Name: ScareTimer
   m_TagString: Untagged
@@ -6302,7 +6306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1056, y: 96}
+  m_AnchoredPosition: {x: -864.01, y: 124}
   m_SizeDelta: {x: 192, y: 192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &743245211
@@ -6363,6 +6367,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743245209}
   m_CullTransparentMesh: 1
+--- !u!114 &743245214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743245209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246f3edcf3fbd914aa7c3299c7e8a445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 744230663}
 --- !u!1 &744230661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,7 +6451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 
 --- !u!222 &744230664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6866,6 +6883,7 @@ MonoBehaviour:
   ghost4: {fileID: 1743399408}
   audio: {fileID: 679516332}
   clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
+  timer: {fileID: 743245209}
 --- !u!61 &844518166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12485,6 +12503,7 @@ MonoBehaviour:
   ghost4: {fileID: 1743399408}
   audio: {fileID: 679516332}
   clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
+  timer: {fileID: 743245209}
 --- !u!61 &1272756548
 BoxCollider2D:
   m_ObjectHideFlags: 0

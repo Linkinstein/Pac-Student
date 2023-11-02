@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowersUpport : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PowersUpport : MonoBehaviour
     public GameObject ghost4;
     public AudioSource audio;
     public AudioClip clip;
+    public GameObject timer;
 
     private void OnDestroy()
     {
@@ -19,5 +21,7 @@ public class PowersUpport : MonoBehaviour
         ghost4.GetComponent<Animator>().SetBool("Scared", true);
         audio.clip = clip;
         audio.Play();
+        timer.GetComponent<Image>().enabled = true;
+        timer.GetComponent<GhostTimer>().Tick();
     }
 }

@@ -195,6 +195,11 @@ public class PacStudentController : MonoBehaviour
             score += 100;
             scoreboard.text = "High Score:\n" + score.ToString();
         }
+
+        if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

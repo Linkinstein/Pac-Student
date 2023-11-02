@@ -25,7 +25,6 @@ public class PacStudentController : MonoBehaviour
     private Vector3 currentInput;
     private Vector3 lastInput;
     private bool moving = false;
-    public bool collided = false;
 
     void Start()
     {
@@ -146,7 +145,6 @@ public class PacStudentController : MonoBehaviour
                     audio.loop = false;
                     audio.clip = collide;
                     StartCoroutine(DisableAudioAfterClip(audio.clip.length));
-                
                 break;
 
             case 1:
@@ -198,4 +196,13 @@ public class PacStudentController : MonoBehaviour
             scoreboard.text = "High Score:\n" + score.ToString();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Teleporter"))
+        {
+            transform.position = other.GetComponent<Telesupport>().exit.transform.position;
+        }
+    }
+
 }

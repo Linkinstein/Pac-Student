@@ -8,6 +8,8 @@ public class PowersUpport : MonoBehaviour
     public GameObject ghost2;
     public GameObject ghost3;
     public GameObject ghost4;
+    public AudioSource audio;
+    public AudioClip clip;
 
     private void OnDestroy()
     {
@@ -15,5 +17,7 @@ public class PowersUpport : MonoBehaviour
         ghost2.GetComponent<Animator>().SetBool("Scared", true);
         ghost3.GetComponent<Animator>().SetBool("Scared", true);
         ghost4.GetComponent<Animator>().SetBool("Scared", true);
+        audio.clip = clip;
+        audio.Play();
     }
 }

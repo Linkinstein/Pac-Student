@@ -5,11 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    public GameObject timer;
     public TextMesh text;
 
     void Start()
     {
-        Debug.Log("STARTING");
         StartCoroutine(Countdown());
     }
 
@@ -36,5 +36,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         text.text = "";
         player.GetComponent<PacStudentController>().started = true;
+        timer.GetComponent<Timer>().ToggleTimer();
     }
 }

@@ -507,6 +507,8 @@ MonoBehaviour:
   ghost2: {fileID: 2062682311}
   ghost3: {fileID: 803816693}
   ghost4: {fileID: 1743399408}
+  audio: {fileID: 679516332}
+  clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
 --- !u!61 &137102888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -654,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1033012741}
+  timer: {fileID: 747149061}
   text: {fileID: 12349908}
 --- !u!4 &179337196
 Transform:
@@ -770,6 +773,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: HighScore
       objectReference: {fileID: 0}
+    - target: {fileID: 4981241836973801417, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
+      propertyPath: m_Text
+      value: 'High Score:
+
+        0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981241836973801417, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981241838139446914, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -777,6 +794,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4981241836973801415, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1378800456}
+    - targetCorrespondingSourceObject: {fileID: 4981241838139446912, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 747149065}
   m_SourcePrefab: {fileID: 100100000, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
 --- !u!4 &334981210 stripped
 Transform:
@@ -834,6 +854,8 @@ MonoBehaviour:
   ghost2: {fileID: 2062682311}
   ghost3: {fileID: 803816693}
   ghost4: {fileID: 1743399408}
+  audio: {fileID: 679516332}
+  clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
 --- !u!61 &468785157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6421,6 +6443,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744230661}
   m_CullTransparentMesh: 1
+--- !u!1 &747149061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4981241838139446912, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
+  m_PrefabInstance: {fileID: 262163839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &747149063 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4981241838139446914, guid: b0c1b6fbde6932a4ea877f26b610a8f4, type: 3}
+  m_PrefabInstance: {fileID: 262163839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747149061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &747149065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747149061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1334640b90c4f214895e95410c347ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 747149063}
 --- !u!1001 &768153817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6813,6 +6864,8 @@ MonoBehaviour:
   ghost2: {fileID: 2062682311}
   ghost3: {fileID: 803816693}
   ghost4: {fileID: 1743399408}
+  audio: {fileID: 679516332}
+  clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
 --- !u!61 &844518166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12430,6 +12483,8 @@ MonoBehaviour:
   ghost2: {fileID: 2062682311}
   ghost3: {fileID: 803816693}
   ghost4: {fileID: 1743399408}
+  audio: {fileID: 679516332}
+  clip: {fileID: 8300000, guid: 6f134050324369340a2da4ae69f5a93c, type: 3}
 --- !u!61 &1272756548
 BoxCollider2D:
   m_ObjectHideFlags: 0

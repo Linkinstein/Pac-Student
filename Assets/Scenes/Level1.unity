@@ -170,9 +170,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12349906}
-  m_Text: ' '
+  m_Text: 
   m_OffsetZ: 0
-  m_CharacterSize: 0.7
+  m_CharacterSize: 0.13
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
@@ -653,8 +653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188ea96fd5d599a4988c07c96e373985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5918789675599934074, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
-  startObject: {fileID: 12349906}
+  player: {fileID: 1033012741}
+  text: {fileID: 12349908}
 --- !u!4 &179337196
 Transform:
   m_ObjectHideFlags: 0
@@ -7154,6 +7154,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8311125512793123706, guid: 9f1a9ebcc3e916c4eaf8f4e40b13904c, type: 3}
   m_PrefabInstance: {fileID: 8311125512646227598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1033012741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5918789675599934074, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
+  m_PrefabInstance: {fileID: 5918789675326640222}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1057178947
 GameObject:
@@ -16334,6 +16339,10 @@ PrefabInstance:
       propertyPath: walkEffect
       value: 
       objectReference: {fileID: 1131122102}
+    - target: {fileID: 7348924541595184441, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
+      propertyPath: GameManager
+      value: 
+      objectReference: {fileID: 179337194}
     - target: {fileID: 7348924541595184441, guid: fd1b6ba1337dd10449206ceb35b338b9, type: 3}
       propertyPath: wallTilemap
       value: 

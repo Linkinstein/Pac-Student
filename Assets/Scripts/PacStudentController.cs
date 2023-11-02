@@ -9,6 +9,7 @@ public class PacStudentController : MonoBehaviour
     private Animator anim;
 
     public Text scoreboard;
+    public GameObject GameManager;
 
     private AudioSource audio;
     public AudioClip collide;
@@ -22,12 +23,14 @@ public class PacStudentController : MonoBehaviour
 
     public float moveSpeed = 10.0f;
     private Vector3 currentInput;
+    private Vector3 spawn;
     private Vector3 lastInput;
     private bool moving = false;
-    private bool started = false;
+    public bool started = false;
 
     void Start()
     {
+        spawn = transform.position;
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
         currentInput = Vector3.zero;
@@ -50,13 +53,13 @@ public class PacStudentController : MonoBehaviour
             Vector3 newDir = transform.position + lastInput;
             Vector3 oldDir = transform.position + currentInput;
 
-            if (IsWalkable(newDir) && newDir != transform.position)
+            if (IsWalkable(newDir) && newDir != transform.position && started)
             {
                 currentInput = lastInput;
                 changeAnim();
                 StartCoroutine(LerpToPosition(newDir));
             }
-            else if (IsWalkable(oldDir))
+            else if (IsWalkable(oldDir) && started)
             {
                 StartCoroutine(LerpToPosition(oldDir));
             }
@@ -163,6 +166,13 @@ public class PacStudentController : MonoBehaviour
                 audio.clip = step;
                 audio.Play();
                 break;
+
+            case 3:
+                audio.enabled = true;
+                audio.loop = false;
+                audio.clip = death;
+                StartCoroutine(DisableAudioAfterClip(audio.clip.length));
+                break;
         }
     }
 
@@ -206,8 +216,16 @@ public class PacStudentController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Ghost"))
         {
-            Destroy(collision.gameObject);
+            started = false;
+            StartCoroutine(dead());
         }
+    }
+
+    IEnumerator dead()
+    {
+        anim.SetBool("Dead", true);
+        ChangeAudio(3);
+        yield return new WaitForSeconds(5);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

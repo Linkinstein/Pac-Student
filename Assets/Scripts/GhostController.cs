@@ -21,12 +21,9 @@ public class GhostController : MonoBehaviour
 
     IEnumerator ScareTimer()
     {
-        Debug.Log("Scared");
         yield return new WaitForSeconds(7);
-        Debug.Log("recovering");
         anim.SetBool("Recovering", true);
         yield return new WaitForSeconds(3);
-        Debug.Log("recover");
         anim.SetBool("Scared", false);
         anim.SetBool("Recovering", false);
     }

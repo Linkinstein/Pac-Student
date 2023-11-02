@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject playerPrefab;
-    public GameObject startObject;
-    private TextMesh text;
+    public GameObject player;
+    public TextMesh text;
 
     void Start()
     {
         Debug.Log("STARTING");
-        text = startObject.GetComponent<TextMesh>();
         StartCoroutine(Countdown());
     }
 
@@ -22,7 +20,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Countdown()
     {
-        Debug.Log("Hello?");
+        text.characterSize = 0.13f;
+        text.text = "THEY ARE\nCOMING";
+        yield return new WaitForSeconds(10f);
+        text.text = "ARE YOU\nREADY?";
+        yield return new WaitForSeconds(10f);
+        text.characterSize = 0.7f;
         text.text = "3";
         yield return new WaitForSeconds(1);
         text.text = "2";
@@ -31,7 +34,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         text.text = "GO";
         yield return new WaitForSeconds(1);
-        text.text = ""; 
-        Debug.Log("bye?");
+        text.text = "";
+        player.GetComponent<PacStudentController>().started = true;
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -9,10 +10,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject scoreboard;
     public GameObject timer;
+    public GameObject[] hearts;
     public TextMesh text;
     public Tilemap tiles;
 
     private float startTime;
+    private int deadCounter = 0;
 
     void Start()
     {
@@ -22,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (IsTilemapEmpty())
+        if (IsTilemapEmpty() || deadCounter == 3)
         {
             int highScore = scoreboard.GetComponent<HighScoreTracker>().score;
             float bestTime = Time.time - startTime - 24.0f;
@@ -76,8 +79,11 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+
+
     public void died()
-    { 
-        
+    {
+        hearts[deadCounter].GetComponent<Image>().enabled = false;
+        deadCounter++;
     }
 }

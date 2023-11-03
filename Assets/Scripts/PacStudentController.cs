@@ -216,7 +216,7 @@ public class PacStudentController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Ghost"))
         {
-            StartCoroutine(dead());
+            if(started) StartCoroutine(dead());
         }
     }
 

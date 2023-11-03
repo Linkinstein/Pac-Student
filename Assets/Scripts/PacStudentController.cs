@@ -225,9 +225,8 @@ public class PacStudentController : MonoBehaviour
         started = false;
         anim.SetBool("Dead", true);
         ChangeAudio(3);
-
         yield return new WaitForSeconds(2.5f);
-
+        GameManager.GetComponent<GameManager>().died();
         transform.position = spawn;
         anim.SetBool("Dead", false);
         yield return new WaitForSeconds(0.5f);

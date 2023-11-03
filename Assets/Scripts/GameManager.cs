@@ -75,4 +75,9 @@ public class GameManager : MonoBehaviour
         }
         return true;
     }
+
+    public void died()
+    { 
+        
+    }
 }
